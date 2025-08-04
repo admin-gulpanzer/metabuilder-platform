@@ -63,18 +63,6 @@ esbuild
 </head>
 <body>
   <div id="root"></div>
-  <script>
-    // Debug script to check if page loads
-    console.log('HTML loaded successfully');
-    window.addEventListener('load', () => {
-      console.log('Page fully loaded');
-      const root = document.getElementById('root');
-      console.log('Root element:', root);
-      if (!root.innerHTML.trim()) {
-        console.log('Root is empty - React app may not have loaded');
-      }
-    });
-  </script>
 </body>
 </html>`;
 
