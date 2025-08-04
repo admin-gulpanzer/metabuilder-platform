@@ -6,11 +6,13 @@ export default defineConfig({
   plugins: [react()],
   build: {
     outDir: 'dist',
-    assetsDir: 'assets',
+    assetsDir: '',
     sourcemap: true,
     rollupOptions: {
       output: {
-        manualChunks: undefined
+        entryFileNames: 'main.js',
+        chunkFileNames: 'main.js',
+        assetFileNames: 'main.css'
       }
     }
   }

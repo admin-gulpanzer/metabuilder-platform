@@ -35,6 +35,10 @@ esbuild
 		define: {
 			"process.env.NODE_ENV": '"production"',
 		},
+		jsx: "automatic",
+		jsxImportSource: "react",
+		external: [],
+		platform: "browser",
 	})
 	.then(() => {
 		console.log("Bundle build completed!");
