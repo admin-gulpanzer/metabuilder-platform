@@ -37,8 +37,9 @@ esbuild
 		},
 		jsx: "automatic",
 		jsxImportSource: "react",
-		external: [],
 		platform: "browser",
+		mainFields: ["module", "main"],
+		resolveExtensions: [".tsx", ".ts", ".jsx", ".js", ".json"],
 	})
 	.then(() => {
 		console.log("Bundle build completed!");
